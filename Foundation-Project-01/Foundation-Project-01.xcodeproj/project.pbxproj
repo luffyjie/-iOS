@@ -14,6 +14,8 @@
 		FFC796C222F527D200B1DA94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFC796C122F527D200B1DA94 /* Assets.xcassets */; };
 		FFC796C522F527D200B1DA94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFC796C322F527D200B1DA94 /* LaunchScreen.storyboard */; };
 		FFC796C822F527D200B1DA94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC796C722F527D200B1DA94 /* main.m */; };
+		FFC796D122F52D9900B1DA94 /* FoundationPractice.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC796D022F52D9900B1DA94 /* FoundationPractice.m */; };
+		FFC796D422F53B4E00B1DA94 /* FoundationPractiveRed.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC796D322F53B4E00B1DA94 /* FoundationPractiveRed.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		FFC796C422F527D200B1DA94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFC796C622F527D200B1DA94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFC796C722F527D200B1DA94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFC796CF22F52D9900B1DA94 /* FoundationPractice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationPractice.h; sourceTree = "<group>"; };
+		FFC796D022F52D9900B1DA94 /* FoundationPractice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationPractice.m; sourceTree = "<group>"; };
+		FFC796D222F53B4E00B1DA94 /* FoundationPractiveRed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationPractiveRed.h; sourceTree = "<group>"; };
+		FFC796D322F53B4E00B1DA94 /* FoundationPractiveRed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationPractiveRed.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,7 @@
 		FFC796B422F527D000B1DA94 /* Foundation-Project-01 */ = {
 			isa = PBXGroup;
 			children = (
+				FFC796CE22F52D2300B1DA94 /* Foundation-01 */,
 				FFC796B522F527D000B1DA94 /* AppDelegate.h */,
 				FFC796B622F527D000B1DA94 /* AppDelegate.m */,
 				FFC796B822F527D000B1DA94 /* MasterViewController.h */,
@@ -74,6 +81,17 @@
 				FFC796C722F527D200B1DA94 /* main.m */,
 			);
 			path = "Foundation-Project-01";
+			sourceTree = "<group>";
+		};
+		FFC796CE22F52D2300B1DA94 /* Foundation-01 */ = {
+			isa = PBXGroup;
+			children = (
+				FFC796CF22F52D9900B1DA94 /* FoundationPractice.h */,
+				FFC796D022F52D9900B1DA94 /* FoundationPractice.m */,
+				FFC796D222F53B4E00B1DA94 /* FoundationPractiveRed.h */,
+				FFC796D322F53B4E00B1DA94 /* FoundationPractiveRed.m */,
+			);
+			path = "Foundation-01";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC796D422F53B4E00B1DA94 /* FoundationPractiveRed.m in Sources */,
 				FFC796BA22F527D000B1DA94 /* MasterViewController.m in Sources */,
+				FFC796D122F52D9900B1DA94 /* FoundationPractice.m in Sources */,
 				FFC796B722F527D000B1DA94 /* AppDelegate.m in Sources */,
 				FFC796C822F527D200B1DA94 /* main.m in Sources */,
 				FFC796BD22F527D000B1DA94 /* DetailViewController.m in Sources */,
@@ -295,13 +315,14 @@
 				DEVELOPMENT_TEAM = RS359C4BY5;
 				INFOPLIST_FILE = "Foundation-Project-01/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beautifulCounty.Foundation-Project-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,13 +334,14 @@
 				DEVELOPMENT_TEAM = RS359C4BY5;
 				INFOPLIST_FILE = "Foundation-Project-01/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.beautifulCounty.Foundation-Project-01";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

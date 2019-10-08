@@ -26,6 +26,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self configureView];
+    [self performSelector:@selector(testAction) withObject:nil afterDelay:3];
+    
+//    self.view.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 
@@ -38,6 +41,10 @@
         // Update the view.
         [self configureView];
     }
+}
+
+- (void) testAction {
+    self.detailDescriptionLabel.text = @"j哈哈哈来看哈杀伤力很卡很凉快很久的交互设计黄金时间开会时间和空间和时间开始上课的建行卡升级换代结合实际口水都快回家结婚快睡觉哈结婚登记户口建行卡精华大合集啊带回家啊喝酒啊喝酒啊带回家";
 }
 
 

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "DetailViewController.h"
+#import "FoundationPractice.h"
+#import "FoundationPractiveRed.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -22,7 +24,23 @@
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
+    
+    // Test run here
+    [self testHere];
+    
+//    NSEnumerator
+    
     return YES;
+}
+
+- (void)testHere {
+    FoundationPractice *f = [[FoundationPractice alloc] init];
+//    [f setAage:30];
+//    [f print];
+    FoundationPractiveRed *red = [FoundationPractiveRed new];
+//    FoundationPractiveRed *red2 = [FoundationPractiveRed new];
+
+//    [red print];
 }
 
 

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+static int pp = 1220;
+
 @class DetailViewController;
 
 @interface MasterViewController : UITableViewController
